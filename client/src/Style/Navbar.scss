@@ -1,0 +1,157 @@
+@mixin devices($breakpoint) {
+  //the name of the mixin is devices
+  @if $breakpoint == laptop {
+    @media only screen and (min-width: 1000px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 1000px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+}
+.navbar {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  height: 65px;
+  background-color: transparent;
+  z-index: 2;
+  a {
+    color: var(--color-2);
+    transition: var(--main-transition);
+  }
+  a:hover {
+    color: var(--text-color-hover);
+    letter-spacing: var(--spacing-0);
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 22px;
+    background: var(--color-3-trans);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    transition: var(--main-transition);
+  }
+  .logo:hover {
+    background-color: rgba(0, 0, 0, 0.153);
+  }
+  .right {
+    flex-grow: 3;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .links {
+      display: flex;
+      justify-content: space-evenly;
+      a {
+        padding: 5px 10px;
+        margin: 10px;
+        background-color: var(--color-3-trans);
+        backdrop-filter: blur(2px);
+        border-radius: 10px;
+      }
+      a:hover {
+        background-color: rgba(0, 0, 0, 0.153);
+      }
+    }
+  }
+}
+@include devices(tablet) {
+  .navbar {
+    background: var(--navbar-bg-color);
+    a {
+      color: var(--text-light-color);
+    }
+    .logo {
+      background: none;
+    }
+    .right {
+      overflow: hidden;
+      flex-direction: column-reverse;
+      align-items: start;
+      width: 0;
+      height: calc(100vh - 65px);
+      position: absolute;
+      top: 65px;
+      right: 0;
+      background: var(--navbar-bg-color);
+      transform: translateX(100%);
+      transition: var(--main-transition);
+      .links {
+        flex-direction: column;
+        a {
+          background-color: transparent;
+        }
+      }
+    }
+    .burger {
+      display: block;
+      position: relative;
+      width: 45px;
+      height: 45px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      .bar {
+        display: block;
+        width: 45px;
+        height: 4px;
+        border-radius: 3px;
+        background: var(--text-light-color);
+        transition: var(--main-transition);
+      }
+      .bar::before,
+      .bar::after {
+        content: '';
+        width: 45px;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        background: var(--text-light-color);
+        border-radius: 3px;
+        transition: var(--main-transition);
+      }
+      .bar::before {
+        transform: translateY(-12px);
+      }
+      .bar::after {
+        transform: translateY(12px);
+      }
+    }
+  }
+}
+#on {
+  .right {
+    width: 100%;
+    transform: translateX(0);
+    a {
+      transform: translateX(0);
+    }
+  }
+  .burger {
+    .bar {
+      width: 0;
+      background: transparent;
+    }
+    .bar::before {
+      transform: rotate(45deg);
+    }
+    .bar::after {
+      transform: rotate(-45deg);
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.progress-bar {
+  width: 80%;
+  font-size: 12px;
+  .bar {
+    height: 10px;
+    width: 100%;
+    background-color: var(--color-1);
+    border-radius: 50px;
+    .filler {
+      height: 100%;
+      background-color: var(--color-2);
+      border-radius: inherit;
+    }
+  }
+  .legend {
+    display: flex;
+    justify-content: space-between;
+  }
+}

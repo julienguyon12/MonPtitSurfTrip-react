@@ -1,0 +1,60 @@
+@mixin devices($breakpoint) {
+  //the name of the mixin is devices
+  @if $breakpoint == laptop {
+    @media only screen and (min-width: 1000px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 1000px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+}
+.spotCard {
+  position: relative;
+  overflow: hidden;
+  transition: var(--main-transition);
+  display: flex;
+  border-radius: 5%;
+  img {
+    display: block;
+    transform: scale(100%);
+    transition: var(--main-transition);
+  }
+  .desc {
+    position: absolute;
+    bottom: 0;
+    color: var(--text-light-color);
+    background-color: rgba(0, 0, 0, 0.4);
+
+    padding: 10px;
+    transform: translateY(70%);
+    transition: var(--main-transition);
+    p {
+      margin: 10px 0;
+      font-size: 14px;
+      text-align: justify;
+      overflow: hidden;
+      letter-spacing: 2px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      white-space: pre-wrap;
+    }
+  }
+}
+.spotCard:hover {
+  img {
+    transform: scale(150%);
+  }
+  .desc {
+    transform: translateY(0%);
+  }
+}

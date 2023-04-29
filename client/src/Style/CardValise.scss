@@ -1,0 +1,119 @@
+@mixin devices($breakpoint) {
+  //the name of the mixin is devices
+  @if $breakpoint == laptop {
+    @media only screen and (min-width: 1000px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 1000px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+}
+.card-valise {
+  width: 80%;
+  background-color: var(--color-1);
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  .top {
+    display: flex;
+    .left {
+      width: 45%;
+
+      h2 {
+        background-color: var(--color-2);
+        color: var(--color-1);
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 5px 0px;
+        text-align: center;
+        width: 250px;
+        letter-spacing: 0.2rem;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateY(-50%);
+      }
+      ul {
+        height: 350px;
+        padding-left: 4vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        li {
+          margin-top: 10px;
+        }
+      }
+    }
+    .center {
+      background-color: var(--color-3);
+      height: 400px;
+      width: 4px;
+      border-radius: 30px;
+      margin: 50px 0 20px 0px;
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      padding-left: 4vw;
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+      p {
+        line-height: 1.5rem;
+        font-weight: 500;
+      }
+    }
+  }
+  .bottom {
+    background-color: var(--color-3);
+    height: 4px;
+    width: 80%;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@include devices(tablet) {
+  .card-valise {
+    margin-top: 50px;
+    height: unset;
+    .top {
+      flex-direction: column;
+      .left {
+        width: 100%;
+        ul {
+          height: unset;
+          padding: 20px;
+          justify-content: unset;
+        }
+      }
+      .center {
+        height: 4px;
+        width: 80%;
+        border-radius: 30px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .right {
+        width: 100%;
+        padding: 20px;
+      }
+    }
+
+    .bottom {
+      display: none;
+    }
+  }
+}

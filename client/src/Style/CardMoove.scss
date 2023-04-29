@@ -1,0 +1,22 @@
+.card-moove {
+  width: 250px;
+  height: 600px;
+  background-color: var(--color-1);
+  .title {
+    background-color: var(--color-2);
+    width: 150px;
+    transform: translate(-40px, -5px);
+    h3 {
+      color: var(--color-1);
+      font-size: 1.3rem;
+      padding: 0;
+      text-align: center;
+    }
+  }
+  img {
+    width: 250px;
+  }
+  p {
+    padding: 20px;
+  }
+}

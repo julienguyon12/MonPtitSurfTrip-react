@@ -245,7 +245,7 @@ export const spot = [
     pays: `Nicaragua`,
     imgHeader: `${process.env.PUBLIC_URL}/assets/imgcolorado/IMG_1729.PNG`,
     description: `Playa colorado se situe au sud du Nicaragua. C'est une vague de classe internationale, ses tubes sont reconnue dans le monde entier. Le spot peut supporter des houles de plus de 2m le tout avec un vent offshore toute année.Très prisé des américains ces derniers ont construit un resort et un aéroport afin de s'y rendre lorsque les conditions sont favorables. `,
-    imgitem: `${process.env.PUBLIC_URL}/assets/imgcolorado/IMG_1850.png`,
+    imgitem: `${process.env.PUBLIC_URL}/assets/imgcolorado/IMG_1850.PNG`,
     niveau: `75`,
     niveauDescription: `Vagues rapides et tubulaires qui ouvrent avec un peu de taille. `,
     qualite: `90`,

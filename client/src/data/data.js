@@ -193,7 +193,7 @@ export const spot = [
     pays: `Nicaragua`,
     imgHeader: `${process.env.PUBLIC_URL}/assets/maderas/couv.JPG`,
     description: `Playa Maderas se situe au sud du Nicaragua non loin de la ville de fête San Juan del Sur. C'est une vague qui ravira les débutants comme les surfeur expérimentés. Sur le cote gauche de la plage déroule une belle gauche qui peut offrir de jolis tubes et sur le cote droit une droite un peu plus courte. `,
-    imgitem: `${process.env.PUBLIC_URL}/assets/maderas/couv1.jpg`,
+    imgitem: `${process.env.PUBLIC_URL}/assets/maderas/couv1.JPG`,
     niveau: `30`,
     niveauDescription: `Tout niveau. La gauche peut offrir des tubes parfaits les bons jours. `,
     qualite: `75`,

@@ -95,7 +95,7 @@ const Autor = () => {
             transition={{ type: 'spring', stiffness: 30 }}
           >
             <img
-              src={`${process.env.PUBLIC_URL}/assets/moi/colas.JPG`}
+              src={`${process.env.PUBLIC_URL}/assets/moi/colas.jpg`}
               alt=''
             />
           </motion.div>

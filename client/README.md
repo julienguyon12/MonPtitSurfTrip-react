@@ -1,6 +1,43 @@
-# Getting Started with Create React App
+# MonPetitSurfTrip-react
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+MonPetitSurfTrip is a blog repertoring all the surf spot along my 2 years travel. It contain all the infos you need to have a good surf trip from the report of the wave to the nearest accomodation. It's a project i first code in javascript vanilla and here i re-designed and re-code it using react.
+
+![MonPetitSurfTrip's interface](public/img/screen/acceuil.png)
+
+## Main features
+
+- Surf spot report
+- Countries filter
+- Author profile
+- Luggage detail
+
+## How to use the application?
+
+### Step 1
+
+The user choose a country with the slider interface.
+
+### Step 2
+
+The user choose a spot clicking on the card.
+
+### Step 3
+
+Then user access to the report page where he can access all the infos for the spot. He can also see all the spots around.
+
+## Technical aspects
+
+The web site is static with only front-end.
+The stack is HTML/CSS/React.
+
+### Deployment
+
+The application is deployed on Render.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Please make sure to update tests as appropriate.
 
 ## Available Scripts
 
@@ -38,33 +75,3 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

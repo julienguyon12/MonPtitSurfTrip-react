@@ -2,7 +2,7 @@
 
 MonPetitSurfTrip is a blog repertoring all the surf spot along my 2 years travel. It contain all the infos you need to have a good surf trip from the report of the wave to the nearest accomodation. It's a project i first code in javascript vanilla and here i re-designed and re-code it using react.
 
-![MonPetitSurfTrip's interface](public/img/screen/acceuil.png)
+![MonPetitSurfTrip's interface](client/public/assets/MPSTR.PNG)
 
 ## Main features
 
